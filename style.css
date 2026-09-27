@@ -1,0 +1,489 @@
+header[data-testid="stHeader"] {
+    display: none;
+}
+.stDeployButton {
+    display: none;
+}
+.block-container {
+    padding-top: 1rem;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+    box-sizing: border-box;
+}
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+}
+body {
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+    overflow: hidden;
+}
+.stApp {
+    background:
+        radial-gradient(circle at 8% 5%, rgba(108, 42, 211, .30), transparent 25%),
+        radial-gradient(circle at 95% 90%, rgba(99, 39, 207, .28), transparent 27%),
+        linear-gradient(135deg, #050817 0%, #080a1c 48%, #262b3a 100%);
+}
+.mainbox1 {
+    position: relative;
+    text-align: center;
+    z-index: 3;
+    flex: 0 0 auto;
+    padding: 30px;
+    margin-left: 60px;
+    margin-right: 60px;
+    border-radius: 32px;
+}
+.hero-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 8px;
+}
+.img1 {
+    height: 12%;
+    width: 15%;
+    object-fit: contain;
+}
+.hero-text {
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+.mainbox1 h1 {
+    margin: 2px 0 6px;
+    font-size: clamp(70px, 2.5vh, 75px);
+    line-height: 1.05;
+    font-weight: 550;
+    letter-spacing: -2px;
+}
+.gradient-text {
+    background: linear-gradient(90deg, #8d37e7, #b55cff, #7537dc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.white-text {
+    color: #f5f5fa;
+}
+.title-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+}
+.title-line span {
+    display: block;
+    width: 55px;
+    height: 4px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #963dff, #7135d8);
+}
+.title-line b {
+    color: #9744ff;
+    font-size: 15px;
+}
+.mainbox1 h2 {
+    margin: 0;
+    color: #c4c7db;
+    font-size: clamp(22px, 2.5vh, 28px);
+    font-weight: 425;
+}
+.mainbox1 p {
+    margin: 4px 0 0;
+    color: #b8bad0;
+    font-size: clamp(18px, 1.9vh, 22px);
+}
+[data-testid="stFileUploader"] {
+    width: min(1720px, calc(100% - 40px));
+    max-width: 89%;
+    margin-top: 30px;
+    margin-left: 69px;
+}
+[data-testid="stFileUploaderDropzone"] {
+    position: relative !important;
+    box-sizing: border-box !important;
+    width: 100% !important;
+    padding: 75px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    overflow: hidden !important;
+    border: 1px solid rgba(139, 80, 255, 0.55) !important;
+    border-radius: 12px !important;
+    background:
+        radial-gradient(circle at 18% 50%, rgba(86, 36, 190, 0.18), transparent 30%),
+        linear-gradient(100deg, #171034 0%, #101027 48%, #10132c 100%) !important;
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,0.035),
+        0 0 28px rgba(50, 30, 150, 0.08);
+}
+[data-testid="stFileUploaderDropzone"]::before {
+    content: "";
+    position: absolute;
+    left: 34px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 102px;
+    height: 102px;
+    border-radius: 50%;
+    background-color: #4218a8;
+    background-image: url("data:image/png;base64,{upload_cloud_icon}");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200px;
+    z-index: 1;
+    pointer-events: none;
+}
+[data-testid="stFileUploaderDropzone"]::after {
+    content: "Upload PDF";
+    white-space: nowrap;
+    position: absolute;
+    left: 160px;
+    top: 30px;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: 0;
+    pointer-events: none;
+    z-index: 2;
+}
+[data-testid="stFileUploader"]::after {
+    content: "PDF files only (Max 100 MB)";
+    position: absolute;
+    left: 226px;
+    top: 105px;
+    color: #c0bdd0;
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.25;
+    font-weight: 400;
+    letter-spacing: 0;
+    pointer-events: none;
+    z-index: 5;
+}
+[data-testid="stFileUploaderDropzone"] > div:first-child {
+    width: 100% !important;
+}
+[data-testid="stFileUploaderDropzoneInstructions"] {
+    display: none !important;
+}
+[data-testid="stFileUploaderDropzone"] svg {
+    display: none !important;
+}
+[data-testid="stFileUploaderDropzone"] button {
+    position: absolute !important;
+    right: 24px !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 10px 60px !important;
+    border: none !important;
+    background: linear-gradient(100deg, #9d32e7, #7637e7 45%, #3631d8) !important;
+    color: #fff !important;
+    box-shadow: 0 10px 25px rgba(82,36,225,.28);
+    font-family: Arial, sans-serif !important;
+    font-size: 29px !important;
+    font-weight: 500 !important;
+    letter-spacing: 1px;
+    z-index: 3 !important;
+    cursor: pointer !important;
+}
+[data-testid="stFileUploaderDropzone"] button:hover {
+    box-shadow: 0 14px 32px rgba(113,39,235,.38) !important;
+}
+[data-testid="stFileUploaderDropzone"] button:focus {
+    outline: 2px solid rgba(255,255,255,0.75) !important;
+    outline-offset: 3px !important;
+}
+[data-testid="stFileUploaderFile"] {
+    display: none !important;
+}
+[data-testid="stFileUploader"] [data-testid="stFileUploaderFileData"] {
+    display: none !important;
+}
+[data-testid="stFileUploader"] [data-testid="stFileUploaderFileName"] {
+    display: none !important;
+}
+.upload-card {
+    box-sizing: border-box;
+    margin: 15px auto 0;
+    margin-left: 75px;
+    margin-right: 80px;
+    padding: 18px 24px;
+    display: flex;
+    align-items: center;
+    border-radius: 16px;
+    background: #0d1225;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+.pdf-box {
+    width: 68px;
+    height: 74px;
+    flex: 0 0 68px;
+    border-radius: 10px;
+    background: #ff4141;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    margin-right: 24px;
+}
+.file-info {
+    min-width: 0;
+    flex: 1;
+}
+.filename {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: white;
+    font-size: 19px;
+    font-weight: 600;
+}
+.filesize {
+    color: #bfc4d4;
+    font-size: 15px;
+    margin-top: 5px;
+}
+.success {
+    color: #20ef9d;
+    font-size: 48px;
+    line-height: 1;
+    font-weight: 400;
+    margin-left: 20px;
+}
+.error-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    max-width: calc(100% - 200px);
+    background: rgba(255, 77, 77, 0.15);
+    border-left: 5px solid #ff4d4d;
+    border-right: 5px solid #ff4d4d;
+    color: #ffffff;
+    padding: 18px 26px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    font-weight: 350;
+    margin: 15px auto;
+    box-sizing: border-box;
+    letter-spacing: 0.5;
+}
+.error-box b{
+    margin: 4px;
+}
+div.stButton > button{
+    padding: 15px 35px;
+    border-radius: 15px;
+    border: 1px solid rgba(170,120,255,.35);
+    background: rgba(137,88,255,.12);
+    backdrop-filter: blur(18px);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.12), 0 8px 25px rgba(0,0,0,.35);
+    transition: .35s;
+    margin-top: 25px;
+}
+div.stButton button p {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: Arial, sans-serif;
+    color: white;
+    letter-spacing: 1px;
+}
+div.stButton > button:hover{
+    background: linear-gradient(100deg, #9d32e7, #7637e7 45%, #3631d8) !important;
+    box-shadow: 0 10px 25px rgba(82,36,225,.28);
+    transform: translateY(-3px);
+}
+[data-testid="stSpinner"] {
+    margin-left: 575px;
+    margin-top: 12px;
+}
+[data-testid="stSpinner"] p{
+    font-size: 18px;
+    font-weight: 450;
+    font-family: Arial, sans-serif;
+    color: white;
+    letter-spacing: 1px;
+}
+.chat-title {
+    margin: 20px 80px 15px 80px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.message-row{
+    display:flex;
+    align-items:flex-start;
+    gap: 15px;
+    margin: 0 42px 30px;
+}
+.user-row{
+    justify-content:flex-end;
+} 
+.assistant-row{
+    justify-content:flex-start;
+} 
+.avatar{
+    flex: 0 0 58px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #5F1DD1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+.avatar img {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+}
+.user-bubble{
+    width: min(60%,680px);
+    box-sizing: border-box;
+    background: linear-gradient(135deg,#6225c8,#4f20ae);
+    border:1px solid #813cf0;
+    border-radius: 15px;
+    padding: 20px 20px;
+    color: #fff;
+} 
+.assistant-bubble{
+    width: min(75%,800px);
+    box-sizing: border-box;
+    background:#101b40;
+    border: 1px solid #334579;
+    border-radius: 15px;
+    padding: 20px 20px;
+    color: #fff;
+} 
+.bubble-text{
+    font-size: 18px;
+    line-height: 1.65;
+    overflow-wrap: anywhere;
+}
+.bubble-text p{
+    margin: 0 0 10px;
+}
+.bubble-text p:last-child{
+    margin-bottom: 0;
+}
+.bubble-text ul{
+    margin: 5px 0 8px;
+    padding-left: 25px;
+}
+.bubble-text li{
+    margin-bottom: 6px;
+}
+.bubble-text strong{
+    font-weight: 700;
+} 
+.source-card{
+    width: min(75%,800px);
+    margin: -10px 0 32px 110px;
+    min-height: 78px;
+    box-sizing: border-box;
+    padding: 14px 18px 14px 20px;
+    border: 1px solid #334579;
+    border-radius: 14px;
+    background: #080f30;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    color: #fff;
+}
+.source-left{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-size: 17px;
+    min-width: 0;
+}
+.source-icon{
+    color: #bf45ff;
+    font-size: 25px;
+    flex: 0 0 auto;
+} 
+.source-view{
+    flex: 0 0 auto;
+    border: 1px solid #8a3df1;
+    border-radius: 10px;
+    padding: 11px 20px;
+    color: #c65cff;
+    font-size: 16px
+}
+[data-testid="stChatInput"],[data-testid="stChatInput"] > div,[data-testid="stChatInput"] > div > div,
+[data-testid="stChatInput"] [data-baseweb="textarea"],[data-testid="stChatInput"] [data-baseweb="input"],
+[data-testid="stChatInput"] [data-baseweb="base-input"] {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+div[data-testid="stChatInput"] button {
+    border-radius: 0 !important;
+}
+[data-testid="stBottom"],[data-testid="stBottom"] > div,[data-testid="stBottom"] > div > div {
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+[data-testid="stChatInput"] { 
+    margin-left: 250px;
+    margin-right: 250px;
+    border: 2px solid rgba(139, 80, 255, 0.55) !important;
+    background: #040b25 !important;
+    border-radius: 15px !important;
+    padding-bottom: 10px !important;
+    padding-top: 10px !important;
+    margin-bottom: -40px  !important;
+    height: 80px;  
+}
+[data-testid="stChatInput"] textarea {
+    color: #fff !important;
+    border-radius: 15px !important; 
+    padding: 2% !important;
+    background: #08102f !important;
+    margin-right: 110px !important;
+}
+div[data-testid="stChatInput"] textarea::placeholder{
+    color:#a8b3d5!important;
+}
+div[data-testid="stChatInput"] button {
+    width: 75px !important;
+    height: 50px !important;
+    background: linear-gradient(135deg, #7d2cf3, #6620df) !important;
+    border-radius: 15px !important;
+    border: none !important;
+    box-shadow: none !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 !important;
+    margin-right: 20px !important;
+    margin-bottom: 3px !important;
+}
+div[data-testid="stChatInput"] button svg {
+    width: 40px !important;
+    height: 42px !important;
+    fill: white !important;
+    color: white !important;
+}
