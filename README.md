@@ -76,7 +76,7 @@ The application extracts text from the uploaded PDF, splits it into smaller chun
                     │ Display Answer  │
                     └─────────────────┘
 
-text```
-📁 Project Structure
 
 
+```
+## 🔄 How It Works
