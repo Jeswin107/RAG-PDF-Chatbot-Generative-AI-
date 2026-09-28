@@ -93,14 +93,20 @@ The application extracts text from PDF files, splits the content into smaller ch
 
 ## 📁 Project Structure
 
+## 📁 Project Structure
+
 ```text
 RAG-PDF-Chatbot-Generative-AI/
 │
 ├── 📁 Images/
-│   └── Application images and UI assets
+│   ├── AI Assistant.png
+│   ├── pdf.png
+│   ├── Upload cloud.png
+│   └── User.png
 │
 ├── 📁 Sample PDFs/
-│   └── Sample PDF documents for testing
+│   ├── Sample Questions.pdf
+│   └── SDP_M1.pdf
 │
 ├── 📄 README.md
 ├── 📄 app.py
@@ -109,7 +115,6 @@ RAG-PDF-Chatbot-Generative-AI/
 ├── 📄 style.css
 ├── 📄 utils.py
 └── 📄 vector_db.py
-```
 
 ## 📂 File Description
 
