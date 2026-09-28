@@ -111,7 +111,7 @@ RAG-PDF-Chatbot-Generative-AI/
 ├── 📄 style.css
 ├── 📄 utils.py
 └── 📄 vector_db.py
-
+```
 ## 📂 File Description
 
 | File / Folder | Description |
@@ -125,7 +125,7 @@ RAG-PDF-Chatbot-Generative-AI/
 | `Images/` | Contains images and UI assets used by the application |
 | `Sample PDFs/` | Contains sample PDF documents for testing |
 | `README.md` | Project documentation |
-```
+
 ## ⚙️ Installation
 
 ### 1. Clone the Repository
