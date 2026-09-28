@@ -1,8 +1,6 @@
 # 📄 RAG PDF Chatbot – Generative AI
 
-A Streamlit-based **Retrieval-Augmented Generation (RAG)** application that allows users to upload PDF documents and ask questions about their contents.
-
-The application extracts text from PDF files, splits the content into smaller chunks, generates semantic embeddings, stores the embeddings in a vector database, retrieves relevant passages, and uses **Google Gemini** to generate answers based on the uploaded document.
+A Streamlit-based **Retrieval-Augmented Generation (RAG)** application that allows users to upload PDF documents and ask questions about their contents. The application extracts text from PDF files, splits the content into smaller chunks, generates semantic embeddings, stores the embeddings in a vector database, retrieves relevant passages, and uses **Google Gemini** to generate answers based on the uploaded document.
 
 ## 🚀 Features
 
@@ -363,32 +361,5 @@ The application can be deployed on platforms that support Streamlit applications
 Before deployment, configure the `GOOGLE_API_KEY` securely using the platform's secrets or environment-variable settings.
 
 Do not upload the `.env` file containing your API key.
-
-## 🤝 Contributing
-
-Contributions are welcome.
-
-To contribute:
-
-1. Fork the repository.
-2. Create a new branch.
-3. Make your changes.
-4. Commit your changes.
-5. Push your changes.
-6. Create a Pull Request.
-
-## 📄 License
-
-This project is intended for educational and demonstration purposes.
-
-## 👨‍💻 Author
-
-**Your Name**
-
-Built with:
-
-**Python • Streamlit • Google Gemini • Vector Database • RAG**
-
----
 
 ⭐ If you find this project useful, consider giving the repository a star!
