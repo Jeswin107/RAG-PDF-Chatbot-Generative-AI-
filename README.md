@@ -79,4 +79,18 @@ The application extracts text from the uploaded PDF, splits it into smaller chun
 
 
 ```
-## 🔄 How It Works
+## 📁 Project Structure
+RAG-PDF-Chatbot-Generative-AI/
+│
+├── app.py
+├── utils.py
+├── style.css
+├── requirements.txt
+├── .env
+├── README.md
+│
+├── pdf.png
+├── Upload.png
+└── Upload cloud.png
+
+##⚙️ Installation
