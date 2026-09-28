@@ -91,8 +91,6 @@ A Streamlit-based **Retrieval-Augmented Generation (RAG)** application that allo
 
 ## 📁 Project Structure
 
-## 📁 Project Structure
-
 ```text
 RAG-PDF-Chatbot-Generative-AI/
 │
@@ -127,7 +125,7 @@ RAG-PDF-Chatbot-Generative-AI/
 | `Images/` | Contains images and UI assets used by the application |
 | `Sample PDFs/` | Contains sample PDF documents for testing |
 | `README.md` | Project documentation |
-
+```
 ## ⚙️ Installation
 
 ### 1. Clone the Repository
